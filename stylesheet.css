@@ -55,25 +55,47 @@ nav li {
 
 #feature{
     /* border: 3px solid yellow; */
+    
+    /* justify-content: center; */
+    border: 3px solid rgb(247, 255, 7);
     display: flex;
     justify-content: center;
+
+   
     
 }
 
 #featuredProducts{
-    border: 3px solid rgb(247, 255, 7);
-    height: 800px;
-    width: 700px;
+    
+    height: 400px;
+    /* width: 700px; */
+    justify-content: center;
+
+    border: 3px solid rgb(4, 216, 117);
+    width: 500px;
+    /* margin: 0 auto; */
+    text-align: center;
+
+    
 }
 
 #featuredProducts h1{
-    
     color: red;
+    /* text-align: center; */
+    
+
 }
 
 #products{
     border: 3px solid rgb(255, 0, 0);
     width: 300px;
+    /* justify-content: center; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    margin: 0% auto;
     
     /* height: 800px;
     width: 700px;
