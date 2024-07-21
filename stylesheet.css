@@ -59,6 +59,7 @@ nav li {
     border: 3px solid rgb(247, 255, 7);
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 #featuredProducts{
@@ -74,7 +75,7 @@ nav li {
 }
 
 #featuredProducts h1{
-    color: red;
+   
     /* text-align: center; */
 }
 
