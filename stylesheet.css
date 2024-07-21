@@ -89,6 +89,14 @@ nav li {
 
 .prod1{
     border: 3px solid black;
+    width: 300px;
+    /* height: 500px; */
+}
+.prod1 img{
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any extra space caused by inline elements */
+
 }
 
 .imgContainer{
