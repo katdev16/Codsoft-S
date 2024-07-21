@@ -59,9 +59,6 @@ nav li {
     border: 3px solid rgb(247, 255, 7);
     display: flex;
     justify-content: center;
-
-   
-    
 }
 
 #featuredProducts{
@@ -71,43 +68,38 @@ nav li {
     justify-content: center;
 
     border: 3px solid rgb(4, 216, 117);
-    width: 500px;
+    width: 1000px;
     /* margin: 0 auto; */
-    text-align: center;
-
-    
+    text-align: center; 
 }
 
 #featuredProducts h1{
     color: red;
     /* text-align: center; */
-    
-
 }
 
 #products{
     border: 3px solid rgb(255, 0, 0);
-    width: 300px;
-    
-
+    width: 650px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
     margin: 0% auto;
-    
-
 }
 
 .prod1{
     border: 3px solid black;
-
-  
-
-   
-
 }
 
+.imgContainer{
+    width: 300px;
+    height: 500px;
+}
+.imgContainer img {
+    width: 100%; /* Make the image width 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any extra space caused by inline elements */
+}
 
 
 
