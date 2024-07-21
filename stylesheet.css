@@ -56,10 +56,10 @@ nav li {
     /* border: 3px solid yellow; */
     
     /* justify-content: center; */
-    border: 3px solid rgb(247, 255, 7);
+    /* border: 3px solid rgb(247, 255, 7); */
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 800px;
 }
 
 #featuredProducts{
@@ -68,10 +68,11 @@ nav li {
     /* width: 700px; */
     justify-content: center;
 
-    border: 3px solid rgb(4, 216, 117);
+    /* border: 3px solid rgb(4, 216, 117); */
     width: 1000px;
     /* margin: 0 auto; */
     text-align: center; 
+    height: 800px;
 }
 
 #featuredProducts h1{
@@ -80,7 +81,7 @@ nav li {
 }
 
 #products{
-    border: 3px solid rgb(255, 0, 0);
+    /* border: 3px solid rgb(255, 0, 0); */
     width: 650px;
     display: grid;
     grid-template-columns: 1fr 1fr;
