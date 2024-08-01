@@ -111,7 +111,28 @@ nav li {
     display: block; /* Remove any extra space caused by inline elements */
 }
 
+.column {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically (optional) */
+    height: 200px; /* Example: Set height for the parent container */
+    border: 1px solid #ccc; /* For visualization */
+    background-color: rgba(37, 45, 84, 0.658);
+    color: white;
+}
+.col ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
 
+col li {
+    padding: 10px; /* Example padding for list items */
+    border-bottom: 1px solid #ccc; /* Example border between list items */
+}
+.col{
+    padding: 50px;
+
+}
 
 
 
