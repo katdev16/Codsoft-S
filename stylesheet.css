@@ -22,18 +22,20 @@ nav {
     display: flex; 
     height: 40px;
     color: white;
+    align-items: center; /* Center items vertically */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
+    width: 100%; /* Full width to utilize justify-content */
+    justify-content: space-between; /* Space out items */
+    margin: 10px;
     padding: 0;
-  
 }
 
 nav li {
-    margin: 10px 20px;
+    margin: 0 15px; /* Adjust the space between items */
 }
 
 nav a {
@@ -56,6 +58,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #f5f5f5; /* Light background color */
 }
 
 #catch {
@@ -82,6 +85,54 @@ button {
 button:hover {
     background-color: #333;
 }
+
+
+
+
+/* General section styling */
+#about {
+    padding: 20px;
+    background-color: #f5f5f5; /* Light background color */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space between image and text */
+    max-width: 1200px; /* Maximum width for better alignment */
+    margin: 0 auto; /* Center the container */
+    height: 900px;
+}
+
+/* Styling for the image */
+.about-image img {
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Styling for the text */
+.about-text {
+    max-width: 600px; /* Maximum width for the text container */
+    padding: 20px; /* Padding around the text */
+}
+
+.about-text h2 {
+    font-size: 2rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-text p {
+    font-size: 1rem; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+
+
+
 
 #feature {
     display: flex;
@@ -119,6 +170,7 @@ button:hover {
     flex-wrap: wrap;
     padding: 20px;
     background-color: #333;
+    
     color: white;
 }
 
@@ -210,4 +262,64 @@ ul li {
 
 #productsC.active {
     display: flex;
+}
+
+
+
+
+#catch {
+    padding: 20px;
+    position: relative; /* To position moving text within #catch */
+}
+
+.moving-text {
+    position: absolute;
+    bottom: 10px; /* Adjust position */
+    left: 100%; /* Start off-screen */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide text overflow */
+    width: 100%; /* Full width of container */
+    animation: move-text 10s linear infinite; /* Animation properties */
+}
+
+.moving-text p {
+    display: inline-block;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Background color */
+    color: white;
+    font-size: 1.2rem;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(100%); /* Start from right side */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to left side */
+    }
+}
+
+
+
+/* Basic styles for typing container */
+.typing-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); /* Background color for contrast */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Blinking cursor effect */
+.typing-text::after {
+    content: '|';
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
