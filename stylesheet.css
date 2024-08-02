@@ -197,17 +197,17 @@ ul li {
 }
 
 
-#products .show-clothes{
+#productsC{
     display: none;
 }
-#products .show-shoes {
+#productsS {
     display: none;
 }
 
-/* .show-shoes.active{
-    display: grid;
+#productsS.active{
+    display: flex;
 }
 
-.show-clothes.active {
-    display: grid;
-} */
+#productsC.active {
+    display: flex;
+}

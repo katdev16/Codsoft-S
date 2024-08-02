@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const showShoesButton = document.getElementById('showShoes');
     const showClothesButton = document.getElementById('showClothes');
-    const shoesProducts = document.querySelector('.show-shoes');
-    const clothesProducts = document.querySelector('.show-clothes');
+    const shoesProducts = document.getElementById('productsS');
+    const clothesProducts = document.getElementById('productsC');
 
     showShoesButton.addEventListener('click', () => {
         alert("shoes")
